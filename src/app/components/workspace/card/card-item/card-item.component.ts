@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Task } from '../../../../models/workspace.interface';
 
 @Component({
   selector: 'app-card-item',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardItemComponent implements OnInit {
 
-  constructor() { }
+  @Input() task: Task;
+
+  constructor() {}
 
   ngOnInit() {
   }

@@ -1,10 +1,11 @@
 export interface Card {
   id: number;
   category: string;
+  tasks: Task[];
 }
 
 export interface Task {
   id: number;
-  task: string;
+  name: string;
   description: string;
 }

@@ -1,29 +1,37 @@
 <section class="cards">
   <div class="row">
-    <div class="col-4">
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">TODO</h4>
 
-          <app-card-item></app-card-item>
-        </div>
-      </div>
-    </div>
     <div class="col-4">
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">Doing</h4>
-          ...
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Todo</h4>
+          </div>
+          <div class="card-body" [dragula]='"first-bag"'
+          [dragulaModel]="tasks">
+          <div class="card mt-2" *ngFor="let task of tasks">
+              <app-card-item [task]="task"></app-card-item>
+          </div>
+          </div>
         </div>
       </div>
-    </div>
+
     <div class="col-4">
-      <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">DONE</h4>
-          ...
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Doing</h4>
+          </div>
+          <div class="card-body" [dragula]='"first-bag"'></div>
         </div>
       </div>
-    </div>
-  </div>
+
+      <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Done</h4>
+            </div>
+            <div class="card-body" [dragula]='"first-bag"'></div>
+          </div>
+        </div>
+
+ </div>
 </section>
