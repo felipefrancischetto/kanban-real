@@ -1,0 +1,9 @@
+
+{
+  "tasks":  [
+    { "id": 1, "title": "Resolver tarefa de hoje", "description": "Resolver tudo", "status":"todo"},
+    { "id": 2, "title": "Arrumar Backend ", "description": "Resolver tudo", "status":"doing"},
+    { "id": 3, "title": "Review do codigo", "description": "Resolver tudo", "status":"done"},
+    { "id": 4, "title": "Front", "description": "Resolver tudo", "status":"todo"}
+  ]
+}
